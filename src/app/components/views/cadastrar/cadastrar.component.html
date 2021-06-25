@@ -1,0 +1,22 @@
+
+<mat-card>
+    <mat-card-title>Cadastrar Produto</mat-card-title>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label for="nome">Nome</mat-label>
+            <input matInput placeholder="Nome" name="nome" [(ngModel)]="nome"   /> 
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="codigoBarras">Codigo de Barras</mat-label>
+            <input matInput placeholder="Codigo De Barras" name="codigoBarras" [(ngModel)]="codigoBarras" /> 
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label for="preco">Preco</mat-label>
+            <input matInput placeholder="Preco" name="preco" [(ngModel)]="preco" /> 
+        </mat-form-field>
+           
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button color="primary" (click)="cadastrar()">Cadastrar</button>
+    </mat-card-actions>
+</mat-card>

@@ -1,0 +1,18 @@
+<mat-sidenav-container>
+    <mat-sidenav opened mode="side" fixedInViewport fixedTopGap="64">
+        <mat-list>
+            <a mat-list-item routerLink="produto/listar">
+                <mat-icon matListIcon>format_list_bulleted</mat-icon>
+                <span>Listar Produtos</span>
+            </a>
+            <a mat-list-item routerLink="produto/cadastrar">
+                <mat-icon matListIcon>shopping_cart</mat-icon>
+                <span>Cadastrar Produto</span>
+            </a>
+        </mat-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
+
